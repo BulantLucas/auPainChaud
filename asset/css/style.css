@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -70,20 +70,22 @@ li a {
     font-size: 0.7em;
     color: #dbc3b5;
     border-bottom: solid 1px #dbc3b5;
-
     transition-property: color;
     transition-duration: 0.2s;
     transition-delay: 0.1s;
 }
 
+
 /*survole de nav*/
 li a:hover {
     color: #F6EEEE;
     border-color: #F6EEEE;
+
 }
 
 /* ancre */
-#abLink, #contactLink{
+#abLink,
+#contactLink {
     padding-top: 60px;
 }
 
@@ -95,15 +97,16 @@ li a:hover {
 .about {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items:  center;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     padding-bottom: 70px;
     margin-bottom: 30px;
     background-color: #f0e5df;
+    padding: 0px;
 }
 
-.divimage{
+.divimage {
     width: 25%;
 }
 
@@ -113,18 +116,51 @@ li a:hover {
 }
 
 .abImage {
-    border-radius: 50px;
-    width: 65%;
+    border-radius: 40px;
+    width: 50%;
+    margin-left: 70px;
+    margin-bottom: 30px;
+
 }
 
-.abText{
+.abText {
     text-align: justify;
-    width: 25%;
+    width: 60%;
     margin: 0;
+
 }
+
+@media screen and (max-width: 992px) {
+    .abImage {
+        display: none;
+
+    }
+
+    .abText {
+        padding-left: 50px;
+        padding-bottom: 30px;
+        width: 90%;
+        margin: 0px;
+
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
 
 /* video */
-.video{
+.video {
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -147,17 +183,17 @@ li a:hover {
     width: 33.3%;
 }
 
-.pastry~h3{
+.pastry~h3 {
     margin: 3% 20% 2% 20%;
     border-top: solid 1px #2a2a2a;
 }
 
-.folio h4{
+.folio h4 {
     width: 100%;
     margin: 10px 0;
 }
 
-.folio p{
+.folio p {
     width: 80%;
     margin: 0;
     margin-bottom: 10px;
@@ -180,52 +216,58 @@ li a:hover {
 }
 
 /* Formulaire et nous situer */
-form{
+form {
     width: 70%;
     margin: 40px auto;
 }
 
-form>div{
+form>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-form>div:nth-child(5), form>div:nth-child(6){
+form>div:nth-child(5),
+form>div:nth-child(6) {
     width: 20%;
 }
 
-input, textarea, button{
+input,
+textarea,
+button {
     padding: 5px 10px;
-	border: none;
-	background-color: #f9f4f2;
-	letter-spacing: 1px;
-	border-radius: 5px;
+    border: none;
+    background-color: #f9f4f2;
+    letter-spacing: 1px;
+    border-radius: 5px;
     margin-bottom: 5px;
     margin-right: 15px;
-    
-	transition: background-color;
-	transition-delay: 0.1s;		
-	transition-duration: 0.8s;
+
+    transition: background-color;
+    transition-delay: 0.1s;
+    transition-duration: 0.8s;
 }
 
-input:hover, textarea:hover, select:hover, button:hover{
+input:hover,
+textarea:hover,
+select:hover,
+button:hover {
     background-color: #fff;
 }
 
-textarea{
+textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 0.85em;
     font-style: italic;
-	padding: 10px;
+    padding: 10px;
 }
 
-label span{
+label span {
     color: darkred;
     font-size: 1.1em;
 }
 
-button{
+button {
     cursor: pointer;
     padding: 8px 20px;
 }
@@ -235,7 +277,7 @@ button{
     box-sizing: border-box;
     margin: 50px 5px 100px 5px;
     border-radius: 60px;
-    background-color: #f0e5df; 
+    background-color: #f0e5df;
 }
 
 .contactItems {
@@ -245,41 +287,44 @@ button{
     box-sizing: border-box;
 }
 
-.contactItems:not(.contactItems:nth-child(1)){
+.contactItems:not(.contactItems:nth-child(1)) {
     text-align: center;
 }
 
 /*map*/
-.map{
+.map {
     border-radius: 60px;
-    width: 100%;
-    height: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* horaire */
-.schedule{
+.schedule {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
-.schedule h3, .schedule p{
-    width: 80%;
+.schedule h3,
+.schedule p {
+    width: 70%;
 }
 
 /* footer */
-footer{
+footer {
     background-color: #222222;
     color: #f0e5df;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     font-size: 0.8em;
 }
 
-footer img{
+footer img {
     width: 7%
 }
 
@@ -304,3 +349,4 @@ footer img{
     }
 }
   
+/*Solène*/
