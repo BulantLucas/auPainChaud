@@ -6,6 +6,10 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
+/* .col{
+    display: block;
+    flex-direction: column;    
+} */
 
 h1 {
     font-family: 'Allura', cursive;
@@ -51,12 +55,14 @@ nav ul {
     margin: 0;
 
     list-style-type: none;
-    color: black;
+    color: #E6D9C4;
 }
-.fiche{
-    width:auto;
-    margin-left: auto;
-    margin-right: auto;
+.navbar{
+    position: fixed;
+    background-color: black;
+}
+.nav-link{
+    background-color: rgb(33, 37, 41);
 }
 
 li a {
@@ -65,7 +71,7 @@ li a {
     color: #dbc3b5;
     border-bottom: solid 1px #dbc3b5;
 
-    transition-property: color border-color;
+    transition-property: color;
     transition-duration: 0.2s;
     transition-delay: 0.1s;
 }
@@ -154,6 +160,7 @@ li a:hover {
 .folio p{
     width: 80%;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .items {
@@ -279,3 +286,15 @@ footer img{
     width: 30px;
     height: 30px;
 }
+
+@media screen and (max-width : 576px){
+    .folio>div{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger{
+        margin: 0px 10px 10px 10px;
+    }
+}
+  
