@@ -149,11 +149,21 @@ li a:hover {
 .folio p{
     width: 80%;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .items {
     display: flex;
 }
+@media screen and (max-width : 576px) {
+    .folio {
+        width: 100%;
+        flex-direction: column;
+    }
+    .p{
+        
+    }
+ } 
 
 /*Galerie photos*/
 .folio img {
