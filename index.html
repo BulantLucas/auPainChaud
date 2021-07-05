@@ -71,7 +71,104 @@
     
 
     <!--portfolio-->
-    
+    <h2 id="pastryLink" class="pastry">Nos pâtisseries et nos pains</h2>
+    <h3>Les pains</h3>
+    <div class="folio">
+        <div>
+            <img src="asset/img/rustic.jpg" alt="Pain rustique au feu de bois - Au Pain Chaud">
+            <h4>Le rustique</h4>
+            <p>Aux céréales mélangées et bio et cuit au feu de bois.</p>
+        </div>
+
+        <div>
+            <img src="asset/img/round.jpg" alt="Lots de pains ronds - Au Pain Chaud">
+            <h4>Les pains ronds</h4>
+            <p>Inspirés de la recette traditionnelle, ils se vendent en lots de trois.</p>
+        </div>
+
+        <div>
+            <img src="asset/img/tradition.jpg" alt="Pains tradition - Au Pain Chaud">
+            <h4>La tradition</h4>
+            <p>Recette traditionnelle à la farine complète.</p>
+        </div>
+    </div>
+
+    <h3>Pâtisseries</h3>
+    <div class="folio">
+        <div><img src="asset/img/blueberry.jpg" alt="Assortiments de pâtisseries aux fruits - Au Pain Chaud">
+            <h4>A partager</h4>
+            <p>Assortiments de pâtisseries fruitées, mélanges de la culture asiatique et occidentale.</p>
+        </div>
+
+        <div><img src="asset/img/charlotte.jpg" alt="Biscuits auc fraises et chocolats blancs - Au Pain Chaud">
+            <h4>Le gourmand</h4>
+            <p>Un biscuit artisanal surmonté de fraises fraiches et de copeaux de chocolats.</p>
+        </div>
+
+        <div><img src="asset/img/redPastry.jpg" alt="Pâtisseries à la vanille et aux fraises - Au Pain Chaud">
+            <h4>Le vanillier</h4>
+            <p>Base au spéculos recouvert d'une mousse à la vanille et de fraises coupées.</p>
+        </div>
+    </div>
+    <!-- end portfolio -->
+
+    <!-- adress & form contact -->
+    <h2 id="contactLink">Venir chez nous</h2>
+    <div class="contactContainer">
+        <div class="contactItems">
+            <h3>Nous contacter</h3>
+            <!--form-->
+            <form action="/ma-page-de-traitement" method="POST">
+                <div>
+                    <label for="name">Nom <span>* </span></label>
+                    <input type="text" id="name" name="user_name" placeholder="Nom*" required>
+                </div>
+                <div>
+                    <label for="firstname">Prénom <span>* </span></label>
+                    <input type="text" id="firstname" name="user_firstname" placeholder="Prénom*" required>
+                </div>
+                <div>
+                    <label for="mail">E-mail<span>*</span></label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Saisissez votre e-mail*">
+                </div>
+                <div>
+                    <label>Téléphone </label>
+                    <input type="tel" name="tel" maxlength="10" Pattern="^9[0-9]{7}" />
+                </div>
+                <div>
+                    <input type="radio" id="society" name="type" value="society">
+                    <label for="society">Société</label>
+                </div>
+                <div>
+                    <input type="radio" id="particulier" name="type" value="particulier">
+                    <label for="particulier">Particulier</label>
+                </div>
+                <div>
+                    <label for="subjectline">Objet du message<span>*</span></label>
+                    <input type="text" id="subjectline" name="subjectline" placeholder="Objet du message" required>
+                </div>
+                <div>
+                    <label for="msg">Message<span>*</span></label>
+                    <textarea id="msg" name="user_message" placeholder="Ecrivez votre demande..." required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+
+        <!--map-->
+        <div class="contactItems"><iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.26251409109!2d2.296106338242958!3d49.89387466146538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78438b2bf754f%3A0x8ab1ab82f99fffc6!2sPlaisir%20du%20Pain%20Chaud!5e0!3m2!1sfr!2sfr!4v1624458590039!5m2!1sfr!2sfr"
+                width="450" height="400" style="border: 150px;;" allowfullscreen="" loading="lazy"></iframe></div>
+
+        <!--schedules-->
+        <div class="contactItems schedule">
+            <h3>Horaires et jours d'ouverture de votre boulangerie pâtisserie</h3>
+            <p><em>Au Pain Chaud</em> est ouvert du lundi au samedi de 7h30 à 20h00,<br>
+                et les dimanches et jours fériés de 8h00 à 12h00.</p>
+        </div>
+    </div>
     <!-- end adress & form -->
                                   
 
