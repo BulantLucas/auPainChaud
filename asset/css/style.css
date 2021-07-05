@@ -166,6 +166,12 @@ li a:hover {
 .items {
     display: flex;
 }
+@media screen and (max-width : 576px) {
+    .folio {
+        width: 100%;
+        flex-direction: column;
+    }
+ } 
 
 /*Galerie photos*/
 .folio img {
