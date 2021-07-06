@@ -34,6 +34,20 @@ a {
     color: #E6D9C4;
 }
 
+/* nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+} */
+.marg{
+    margin-top: 50px;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -44,6 +58,7 @@ nav {
     position: fixed;
     top: 0;
     background-color: #000;
+
 }
 
 nav ul {
