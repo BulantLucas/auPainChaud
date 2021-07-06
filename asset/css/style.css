@@ -349,6 +349,34 @@ footer img {
         width: 100%;
     }
 }
+@media screen and (min-device-width : 480px) and (max-device-width : 768px){
+    .folio>div{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactItems {
+        width: 90%;
+        flex-basis: 90%;
+        padding: 0px 0px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .map {
+        border-radius: 60px;
+        min-width: 370px;
+        min-height: 370px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    .logo{
+        padding-top: 10px;
+    }
+    .video{
+        width: 100%;
+    }
+}
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* Styles pour cette Media Queries */
