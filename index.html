@@ -126,47 +126,62 @@
     <h2 id="contactLink">Venir chez nous</h2>
     <div class="contactContainer container">
         <div class="row">
-        <div class="contactItems">
-            <h3>Nous contacter</h3>
-            <!--form-->
-            <form action="/ma-page-de-traitement" method="POST">
-                <div>
-                    <label for="name">Nom <span>* </span></label>
-                    <input type="text" id="name" name="user_name" placeholder="Nom*" required>
+            <div class="contactItems">
+                <h3>Nous contacter</h3>
+                <form action="/ma-page-de-traitement" method="POST">
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="name">Nom <span>* </span></label>
+                        <input type="text" id="name" name="user_name" placeholder="Nom*" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="firstname">Prénom <span>* </span></label>
+                        <input type="text" id="firstname" name="user_firstname" placeholder="Prénom*" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="firstname">Prénom <span>* </span></label>
-                    <input type="text" id="firstname" name="user_firstname" placeholder="Prénom*" required>
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="mail">E-mail<span></span></label>
+                        <input type="email" id="mail" name="user_mail" placeholder="Saisissez votre e-mail*">
+                    </div>
                 </div>
-                <div>
-                    <label for="mail">E-mail<span></span></label>
-                    <input type="email" id="mail" name="user_mail" placeholder="Saisissez votre e-mail*">
+                    <div class="row">
+                        <div class="col-12">
+                        <label>Téléphone </label>
+                        <input type="tel" name="tel" maxlength="10" Pattern="^9[0-9]{7}" />
+                    </div>
                 </div>
-                <div>
-                    <label>Téléphone </label>
-                    <input type="tel" name="tel" maxlength="10" Pattern="^9[0-9]{7}" />
+                    <div class="row">
+                        <div class="col-12">
+                        <input type="radio" id="society" name="type" value="society">
+                        <label for="society">Société</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="society" name="type" value="society">
-                    <label for="society">Société</label>
+                    <div class="row">
+                        <div class="col-12">
+                        <input type="radio" id="particulier" name="type" value="particulier">
+                        <label for="particulier">Particulier</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="particulier" name="type" value="particulier">
-                    <label for="particulier">Particulier</label>
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="subjectline">Objet du message<span>*</span></label>
+                        <input type="text" id="subjectline" name="subjectline" placeholder="Objet du message" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="subjectline">Objet du message<span>*</span></label>
-                    <input type="text" id="subjectline" name="subjectline" placeholder="Objet du message" required>
-                </div>
-                <div>
-                    <label for="msg">Message<span>*</span></label>
-                    <textarea id="msg" name="user_message" placeholder="Ecrivez votre demande..." required></textarea>
-                </div>
-                <div class="button">
-                    <button type="submit">Envoyer</button>
-                </div>
-            </form>
-        </div>    
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="msg">Message<span>*</span></label>
+                        <textarea id="msg" name="user_message" placeholder="Ecrivez votre demande..." required></textarea>
+                    </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>    
         </div>
 
         <!--map-->
@@ -178,16 +193,14 @@
                 </div>
             </div>
         </div>
-            <!--schedules-->
-
-            <div class="contactItems schedule">
-                <div class="col-12 offset-3 col-lg-6">
-                    <h3>Horaires et jours d'ouverture de votre boulangerie pâtisserie</h3>
-                    <p><em>Au Pain Chaud</em> est ouvert du lundi au samedi de 7h30 à 20h00,<br>
-                        et les dimanches et jours fériés de 8h00 à 12h00.</p>
-                </div>
+        <!--schedules-->
+        <div class="contactItems schedule">
+            <div class="col-12 offset-3 col-lg-6">
+                <h3>Horaires et jours d'ouverture de votre boulangerie pâtisserie</h3>
+                <p><em>Au Pain Chaud</em> est ouvert du lundi au samedi de 7h30 à 20h00,<br>
+                    et les dimanches et jours fériés de 8h00 à 12h00.</p>
             </div>
-        
+        </div>        
     </div>
     <!-- end adress & form -->
     <footer>
