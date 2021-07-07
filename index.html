@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +18,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="asset/img/Logo_Au_Pain_Chaud.png">
     <title>Au pain chaud - Boulangerie pâtisserie sur Amiens</title>
 </head>
-
 <body>
     <header>
           <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -51,9 +49,9 @@
         <div class="row">
             <div class="about">
                 <div id="abLink" class="abTitle">
-                    <h2 class="col-6 col-lg-6 offset-3">A propos</h2>
+                    <h2 class="col-12 col-lg-12 mb-4">A propos</h2>
                 </div>
-                <div class="col-8 col-lg-4 mb-4">
+                <div class="col-12 mb-4 col-lg-4">
                     <img src="asset/img/apropos.jpg" class="abImage" alt="image de mains de boulanger - Au Pain Chaud">
                 </div>
 
@@ -121,9 +119,9 @@
             </div>
         </div>
     </div>
-    <!-- end portfolio -->
-    <!-- adress & form contact -->
-    <h2 id="contactLink">Venir chez nous</h2>
+    <!-- end portfolio
+    adress & form contact -->
+    <!-- <h2 id="contactLink">Venir chez nous</h2>
     <div class="contactContainer container-fluid">
         <div class="row">
             <div class="contactItems">
@@ -184,7 +182,7 @@
             </div>    
         </div>
 
-        <!--map-->
+        map
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="contactItems"><iframe class="map"
@@ -193,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <!--schedules-->
+        schedules
         <div class="contactItems schedule">
             <div class="col-12 offset-3 col-lg-6">
                 <h3>Horaires et jours d'ouverture de votre boulangerie pâtisserie</h3>
@@ -201,7 +199,69 @@
                     et les dimanches et jours fériés de 8h00 à 12h00.</p>
             </div>
         </div>        
-    </div> 
+    </div>  -->
+    <div class="container-fluid">
+        <div class="contactContainer">            
+            <div class="row">
+                <div class="col col-xs-12 col-lg-4 col-md-4 text-center">
+                    </br>
+                    <h3>Horaires et jours d'ouverture :</h3></br>
+                    <p><em>Au Pain Chaud</em> est ouvert du lundi au samedi de 7h30 à 20h00,<br>
+                        et les dimanches et jours fériés de 8h00 à 12h00.</p>
+                </div>               
+                <div class="col col-xs-12 col-lg-4 col-md-4">
+                    <iframe class="map  justify-content-center"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.26251409109!2d2.296106338242958!3d49.89387466146538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78438b2bf754f%3A0x8ab1ab82f99fffc6!2sPlaisir%20du%20Pain%20Chaud!5e0!3m2!1sfr!2sfr!4v1624458590039!5m2!1sfr!2sfr"
+                        width="450" height="450" style="border: 150px;;" allowfullscreen="" loading="lazy"></iframe>
+                </div>            
+                <div class="col col-xs-12 col-lg-4 col-md-4 justify-content-center">
+                    </br>
+                    <h3>Nous contacter</h3>
+              
+                    <form action="/ma-page-de-traitement" method="POST">
+                        <div>
+                            <label for="name">Nom <span> </span></label>
+                            <input type="text" id="name" name="user_name" placeholder="Nom*" required>
+                        </div>
+                        <div>
+                            <label for="firstname">Prénom <span> </span></label>
+                            <input type="text" id="firstname" name="user_firstname" placeholder="Prénom*" required>
+                        </div>
+                        <div>
+                            <label for="mail">E-mail<span>*</span></label>
+                            <input type="email" id="mail" name="user_mail" placeholder="Saisissez votre e-mail*">
+                        </div>
+                        <div>
+                            <label>Téléphone </label>
+                            <input type="tel" name="tel" maxlength="10" Pattern="^9[0-9]{7}" />
+                        </div>
+                        <div>
+                            <input type="radio" id="society" name="type" value="society">
+                            <label for="society">Société</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="particulier" name="type" value="particulier">
+                            <label for="particulier">Particulier</label>
+                        </div>
+                        <div>
+                            <label for="subjectline">Objet du message<span>*</span></label>
+                            <input type="text" id="subjectline" name="subjectline" placeholder="Objet du message"
+                                required>
+                        </div>
+                        <div>
+                            <label for="msg">Message<span>*</span></label>
+                            <textarea id="msg" name="user_message" placeholder="Ecrivez votre demande..."
+                                required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
     <!-- footer -->
     <footer class="page-footer font-small blue pt-4">
         <div class="container">  
