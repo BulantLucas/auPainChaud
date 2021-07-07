@@ -28,6 +28,13 @@ h2 {
 
 h3 {
     text-align: center;
+    display: block;
+    font-size: 1.40em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 a {
@@ -117,29 +124,7 @@ li a:hover {
     margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-    .abImage {
-        display: none;
-    }
 
-    .abText {
-        padding-left: 50px;
-        padding-bottom: 30px;
-        width: 90%;
-        margin: 0px;
-    }
-
-    .contactContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .map {
-        width: auto;
-        height: auto;
-    }
-}
 
 
 /* video */
@@ -200,7 +185,7 @@ li a:hover {
 
 /* Formulaire et nous situer */
 form {
-    width: 70%;
+    width: 33%;
     margin: 40px auto;
 }
 
@@ -225,8 +210,6 @@ button {
     border-radius: 5px;
     margin-bottom: 5px;
     margin-right: 15px;
-
-    transition: background-color;
     transition-delay: 0.1s;
     transition-duration: 0.8s;
 }
@@ -256,10 +239,8 @@ button {
 }
 
 .contactContainer {
-    display: flex;
-    box-sizing: border-box;
-    margin: 50px 5px 100px 5px;
     border-radius: 60px;
+    margin-bottom: 60px;
     background-color: #f0e5df;    
 }
 
@@ -269,6 +250,9 @@ button {
     padding: 0px 0px;
     box-sizing: border-box;
 }
+div>label{
+    align-items: center;
+}
 
 .contactItems:not(.contactItems:nth-child(1)) {
     text-align: center;
@@ -277,8 +261,6 @@ button {
 /*map*/
 .map {
     border-radius: 60px;
-    max-width: auto;
-    max-height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -328,16 +310,22 @@ footer img {
         align-items: center;
     }
     .contactItems {
-        width: 90%;
-        flex-basis: 90%;
+        /* width:70%; */
+        margin: 0;
+        min-width: 300px;
+        min-height: 300px;
+        /* flex-basis: 90%; */
         padding: 0px 0px;
         box-sizing: border-box;
         text-align: center;
     }
+    form{
+        margin-left: 80px;
+    }
     .map {
         border-radius: 60px;
-        min-width: 370px;
-        min-height: 370px;
+        min-width: 300px;
+        min-height: 300px;
         padding-top: 20px;
         padding-bottom: 20px;
         align-items: center;
@@ -364,8 +352,8 @@ footer img {
     }
     .map {
         border-radius: 60px;
-        min-width: 370px;
-        min-height: 370px;
+        min-width: 460px;
+        min-height: 460px;
         padding-top: 20px;
         padding-bottom: 20px;
         align-items: center;
@@ -377,7 +365,25 @@ footer img {
         width: 100%;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media screen and (max-width: 992px) {
+    .abText {
+        padding-left: 50px;
+        padding-bottom: 30px;
+        width: 90%;
+        margin: 0px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* Styles pour cette Media Queries */
     .folio>div{
         width: 100%;
@@ -393,8 +399,8 @@ footer img {
     }
     .map {
         border-radius: 60px;
-        min-width: 370px;
-        min-height: 370px;
+        width: 370px;
+        height: 370px;
         padding-top: 20px;
         padding-bottom: 20px;
         align-items: center;
